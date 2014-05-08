@@ -208,8 +208,7 @@ html:lang(no) .linkflair-metal, html:lang(no) .linkflair-punk, html:lang(no) .li
     display:none;
 }
 
-#search:before {
-content: url(%%RadioLucien%%); 
+div.side div.spacer #search:before {
+    content: url(%%RadioLucien%%); 
 }
 
-/* il faut vraiment que l'on passe sous git */

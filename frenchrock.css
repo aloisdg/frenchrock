@@ -1,0 +1,215 @@
+/* http://jdmcreator.byethost5.com/lab/redditgenerator/ */
+
+h1
+{
+    font-size:20px;
+    font-weight:bold;
+    border-bottom: 1px solid black;
+}
+
+h2
+{
+    font-size:17pt;
+}
+
+h3
+{
+    font-size:15pt;
+}
+
+
+.unvoted .arrow.down {
+    background-image: url(%%down-novote%%);
+    background-position: 0 0;
+}
+
+.unvoted .arrow.up {
+    background-image: url(%%up-novote%%);
+    background-position: 0 0;
+}
+
+.dislikes .arrow.up {
+    background-image: url(%%up-novote%%);
+    background-position: 0 0;
+}
+
+.dislikes .arrow.down {
+    background-image: url(%%down-novote%%);
+    background-position: 0 0;
+}
+
+.likes .arrow.up {
+    background-image: url(%%up-novote%%);
+    background-position: 0 0;
+}
+
+.likes .arrow.down {
+    background-image: url(%%down-novote%%);
+    background-position: 0 0;
+}
+
+.arrow.upmod { 
+    background-image: url(%%up%%);
+    background-position: 0 0;
+}
+
+.arrow.downmod { 
+    background-image: url(%%down%%);
+    background-position: 0 0;
+}
+
+/* width too large */
+.arrow{
+    height: 16px;
+}
+
+/* ca vous dit on passe sous github ? */
+/* bonne idée sinon :) */
+.flair-metal {
+    color:red;
+}
+
+.linkflairlabel:before {
+    width:16px;
+    height:16px;
+}
+
+.flair-metal, .linkflair-metal .linkflairlabel {
+    background-color:black;
+    color:white;
+}
+
+.flair-metal:before, .linkflair-metal .linkflairlabel:before {
+    content:url(%%flairmetal%%);
+}
+
+.linkflair-punk .linkflairlabel {
+    background-color:#3E3E3F;
+    color:white;
+}
+
+.linkflair-punk .linkflairlabel:before {
+    content:url(%%punk%%);
+}
+
+.linkflair-skapunk .linkflairlabel {
+    background-color:white;
+    color:black;
+}
+
+.linkflair-skapunk .linkflairlabel:before {
+    content:url(%%ska%%);
+}
+
+.linkflair-rock > .linkflairlabel {
+    background-color:white;
+    color:#ee9e1c;
+}
+
+.linkflair-rock .linkflairlabel:before {
+    content:url(%%rock%%);
+}
+
+.linkflair-hardrock .linkflairlabel {
+    background-color:white;
+    color:#ee4e1c;
+}
+
+.linkflair-hardrock .linkflairlabel:before {
+    content:url(%%hardrock%%);
+}
+
+.linkflair-poprock .linkflairlabel {
+    background-color:white;
+    color:#d10572;
+}
+
+.linkflair-poprock .linkflairlabel:before {
+    content:url(%%poprock%%);
+}
+
+.linkflair-trappeur .linkflairlabel {
+    background-color:white;
+    color:#ca881e;
+}
+
+.linkflair-trappeur .linkflairlabel:before {
+    content:url(%%trappeur%%);
+}
+
+.linkflair-variete .linkflairlabel {
+    background-color:white;
+    color:#7f4c00;
+}
+
+.linkflair-variete .linkflairlabel:before {
+    content:url(%%variete%%);
+}
+
+/* filtres de flair */
+html:lang(pk) .link:not(.linkflair-punk) {
+    display: none
+}
+
+html:lang(va) .link:not(.linkflair-variete) {
+    display: none
+}
+
+html:lang(tp) .link:not(.linkflair-trappeur) {
+    display: none
+}
+
+html:lang(pr) .link:not(.linkflair-punkrock) {
+    display: none
+}
+
+
+html:lang(rk) .link:not(.linkflair-rock) {
+    display: none
+}
+
+html:lang(pr) .link:not(.linkflair-punkrock) {
+    display: none
+}
+
+html:lang(rr) .link:not(.linkflair-rocknroll) {
+    display: none
+}
+
+html:lang(pr) .link:not(.linkflair-poprock) {
+    display: none
+}
+
+html:lang(sp) .link:not(.linkflair-skapunk) {
+    display: none
+}
+
+html:lang(hr) .link:not(.linkflair-gardrock) {
+    display: none
+}
+
+html:lang(mt) .link:not(.linkflair-metal) {
+    display: none
+}
+
+html:lang(ms) .link:not(.linkflair-metalsympho) {
+    display: none
+}
+
+html:lang(mp) .link:not(.linkflair-metalprog) {
+    display: none
+}
+
+html:lang(hm) .link:not(.linkflair-heavymetal) {
+    display: none
+}
+
+html:lang(no) .linkflair-metal, html:lang(no) .linkflair-punk, html:lang(no) .linkflair-trappeur, html:lang(no) .linkflair-rock, html:lang(no) .linkflair-variete {
+    display:none;
+}
+
+#search:before {
+content: url(%%RadioLucien%%); 
+}
+
+/* il faut vraiment que l'on passe sous git */
